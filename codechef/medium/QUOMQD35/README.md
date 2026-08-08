@@ -4,27 +4,40 @@
 
 ## Problem
 
-_Description not available._
+### Extracting the Last Word in a Sentence
+
+Write a program to extract and display the last word of a given sentence.
+Define a string variable containing a sentence and extract the last word by finding the last space in the string.
+Use the `lastIndexOf()` and `substring()` methods to retrieve the last word and print the result.
+
+ **Expected Output:** 
+
+```
+The last word is: example.
+
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-08T04:47:40.864Z  
+**Submitted:** 2026-08-08T18:58:48.766Z  
 
 ```java
 class Codechef {
     public static void main(String[] args) {
-        // Define a filePath string
-        String filePath = "C:\\Users\\Documents\\myFile.java";
+        // Define a string
+        String text = "This is a simple example.";
 
-        // Find the last occurrence of the dot
-        int lastIndexOfDot = filePath.lastIndexOf(".");
+        // Find the last space in the string
+        int lastIndexOfSpace = text.lastIndexOf(" ");
+
+        // Extract the last word
+        String lastWord = text.substring(lastIndexOfSpace + 1);
 
         // Print the result
-        System.out.println("The last dot is at index: " + lastIndexOfDot);
-
+        System.out.println("The last word is: " + lastWord);
     }
 }
 
