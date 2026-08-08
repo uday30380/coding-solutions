@@ -1,13 +1,15 @@
 class Codechef {
     public static void main(String[] args) {
-        // Define a filePath string
-        String filePath = "C:\\Users\\Documents\\myFile.java";
+        // Define a string
+        String text = "This is a simple example.";
 
-        // Find the last occurrence of the dot
-        int lastIndexOfDot = filePath.lastIndexOf(".");
+        // Find the last space in the string
+        int lastIndexOfSpace = text.lastIndexOf(" ");
+
+        // Extract the last word
+        String lastWord = text.substring(lastIndexOfSpace + 1);
 
         // Print the result
-        System.out.println("The last dot is at index: " + lastIndexOfDot);
-
+        System.out.println("The last word is: " + lastWord);
     }
 }
