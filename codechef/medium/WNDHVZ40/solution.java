@@ -1,0 +1,23 @@
+import java.util.*;
+// This class demonstrates the use of statements and semicolons in Java.
+class Codechef {
+
+    // The main method serves as the entry point for the program.
+    public static void main(String[] args) {
+        
+        // write your code here
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        int n = scanner.nextInt();
+        
+        if(n<=20){
+            System.out.println("Your luggage is within the allowed limit.");
+            
+        }else{
+            System.out.println("Your luggage exceeds the limit by 5 kg. Additional charges may apply.");
+            
+        }
+        System.out.println("Luggage check completed.");
+    }
+}
