@@ -4,35 +4,72 @@
 
 ## Problem
 
-_Description not available._
+### Employee Performance Evaluation
+
+A company evaluates employee performance based on their monthly sales. The system checks whether an employee's sales exceed the performance threshold. Complete the program by filling in the missing parts to ensure the correct functionality.
+
+ **Input:** 
+Take employeeSales and performanceThreshold as input
+
+### Sample 1:
+Input
+Output
+
+```
+120
+100
+```
+
+```
+Performance Status: Exceeds Expectations.  
+Evaluation completed.  
+```
+
+### Sample 2:
+Input
+Output
+
+```
+100
+120
+```
+
+```
+Performance Status: Below Expectations.
+Evaluation completed. 
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T02:38:16.879Z  
+**Submitted:** 2026-08-11T02:41:43.430Z  
 
 ```java
 import java.util.*;
 
 class Codechef {
     public static void main(String[] args) {
-        // Define the attendance percentage
-        int attendancePercentage = 78;
-
-        // Check if the student is eligible for the exam
-        if (attendancePercentage > 75) {
-            System.out.println("You are eligible to take the exam.");
+        
+        // Take employeeSales and performanceThreshold as input
+        
+        Scanner scanner = new Scanner(System.in);
+        int employeeSales = scanner.nextInt();
+        int performanceThreshold = scanner.nextInt();
+        
+        
+        // Checking if employee sales exceed the performance threshold
+        if ( employeeSales > performanceThreshold ) {  // Fill in the blank
+            System.out.println("Performance Status: Exceeds Expectations."); // Fill in the blank
         } else {
-            System.out.println("You are not eligible to take the exam.");
+            System.out.println("Performance Status: Below Expectations."); // Fill in the blank
         }
 
-        // Print completion message
-        System.out.println("Attendance check completed.");
+        // Indicating that the evaluation process is complete
+        System.out.println("Evaluation completed.");
     }
 }
-
 
 ```
 
