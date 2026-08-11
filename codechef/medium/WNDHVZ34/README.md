@@ -4,31 +4,84 @@
 
 ## Problem
 
-_Description not available._
+### Verifying Scholarship Eligibility
+
+A university grants scholarships to students who achieve a minimum qualifying score in their entrance exam. The system checks whether the student's score meets or exceeds the required passing score. Complete the program by filling in the missing parts to ensure correct functionality.
+
+ **Input:** 
+Take input of studentScore and passingScore.
+
+### Sample 1:
+Input
+Output
+
+```
+85
+80
+```
+
+```
+Scholarship Granted!
+Evaluation completed.
+```
+
+### Sample 2:
+Input
+Output
+
+```
+80
+80
+```
+
+```
+Scholarship Granted!
+Evaluation completed.
+```
+
+### Sample 3:
+Input
+Output
+
+```
+75
+80
+```
+
+```
+Scholarship Denied!
+Evaluation completed.
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T02:57:23.148Z  
+**Submitted:** 2026-08-11T03:01:16.211Z  
 
 ```java
 import java.util.*;
-// Program to check if a student has passed the exam
+
 class Codechef {
     public static void main(String[] args) {
-        int score = 75; // Student's score
-        int passingScore = 50; // Minimum score required to pass
+        
+        //Take user input
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        int first = scanner.nextInt();
+        int second = scanner.nextInt();
 
-        // Check if the student's score is greater than or equal to the passing score
-        if (score >= passingScore) {
-            System.out.println("Congratulations! You passed the exam.");
+        // Checking if the student meets the scholarship criteria
+        if (first >= second) {  // Fill in the blank
+            System.out.println("Scholarship Granted!"); // Fill in the blank
         } else {
-            System.out.println("You did not pass. Better luck next time!");
+            System.out.println("Scholarship Denied!"); // Fill in the blank
         }
 
-        System.out.println("Result check completed.");
+        // Indicating that the evaluation process is complete
+        System.out.println("Evaluation completed.");
     }
 }
 
