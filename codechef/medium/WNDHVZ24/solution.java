@@ -2,18 +2,22 @@ import java.util.*;
 
 class Codechef {
     public static void main(String[] args) {
-        // Define the attendance percentage
-        int attendancePercentage = 78;
-
-        // Check if the student is eligible for the exam
-        if (attendancePercentage > 75) {
-            System.out.println("You are eligible to take the exam.");
+        
+        // Take employeeSales and performanceThreshold as input
+        
+        Scanner scanner = new Scanner(System.in);
+        int employeeSales = scanner.nextInt();
+        int performanceThreshold = scanner.nextInt();
+        
+        
+        // Checking if employee sales exceed the performance threshold
+        if ( employeeSales > performanceThreshold ) {  // Fill in the blank
+            System.out.println("Performance Status: Exceeds Expectations."); // Fill in the blank
         } else {
-            System.out.println("You are not eligible to take the exam.");
+            System.out.println("Performance Status: Below Expectations."); // Fill in the blank
         }
 
-        // Print completion message
-        System.out.println("Attendance check completed.");
+        // Indicating that the evaluation process is complete
+        System.out.println("Evaluation completed.");
     }
 }
-
