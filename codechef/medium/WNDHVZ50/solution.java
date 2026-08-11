@@ -9,7 +9,7 @@ class Codechef {
         boolean correct = scanner.nextBoolean();
         int n = scanner.nextInt();
         
-        if(correct == true||n<=24)
+        if(correct == true && n<24)
         {
             System.out.println("Package qualifies for same-day delivery.");
         }else{
