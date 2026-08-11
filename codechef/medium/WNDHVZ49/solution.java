@@ -1,0 +1,24 @@
+import java.util.*;
+
+class Codechef {
+    public static void main(String[] args) {
+        // Predefined emergency access codes
+        int emergencyKeycode = 4321;
+        int overrideCode = 9999;
+
+        // Take user input
+        Scanner scanner = new Scanner(System.in);
+        
+        int n = scanner.nextInt();
+
+
+        // Checking if the entered code matches either emergencyKeycode or overrideCode
+        if (n== emergencyKeycode ||n== overrideCode ) {  // Fill in the blanks
+            System.out.println("Access Granted: Emergency Entry Allowed."); // Fill in the blank
+        } else {
+            System.out.println("Access Denied: Invalid Code."); // Fill in the blank
+        }
+
+
+    }
+}
