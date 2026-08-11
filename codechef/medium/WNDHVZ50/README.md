@@ -4,55 +4,14 @@
 
 ## Problem
 
-### Emergency Access Verification
-
-A security system grants emergency access to a restricted area if either the  **emergency keycode**  is entered correctly or the  **override code**  is used. Complete the program by filling in the missing parts to ensure the correct functionality.
-
- **Input:** 
-Take enteredCode as input.
-
-### Sample 1:
-Input
-Output
-
-```
-4321
-```
-
-```
-Access Granted: Emergency Entry Allowed.
-```
-
-### Sample 2:
-Input
-Output
-
-```
-9999
-```
-
-```
-Access Granted: Emergency Entry Allowed.
-```
-
-### Sample 3:
-Input
-Output
-
-```
-1234
-```
-
-```
-Access Denied: Invalid Code.
-```
+_Description not available._
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T06:18:17.390Z  
+**Submitted:** 2026-08-11T06:18:17.555Z  
 
 ```java
 import java.util.*;
