@@ -27,7 +27,7 @@ class Codechef {
 
         // Calculate the average score by dividing the total by the number of subjects using a 'Double'
         
-        double avg = (firstScore+secondScore+thridScore)/3;
+        double avg = (firstScore+secondScore+thridScore)/3.0;
         
 
 
