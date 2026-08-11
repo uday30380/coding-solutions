@@ -34,7 +34,7 @@ Average Score: 85.0
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T01:57:36.474Z  
+**Submitted:** 2026-08-11T02:05:47.045Z  
 
 ```java
 import java.util.Scanner; // Import the Scanner class to read user input
@@ -66,7 +66,7 @@ class Codechef {
 
         // Calculate the average score by dividing the total by the number of subjects using a 'Double'
         
-        double avg = (firstScore+secondScore+thridScore)/3;
+        double avg = (firstScore+secondScore+thridScore)/3.0;
         
 
 
