@@ -47,7 +47,7 @@ Package does not qualify for same-day delivery.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T06:24:40.652Z  
+**Submitted:** 2026-08-11T06:25:04.992Z  
 
 ```java
 import java.util.*;
@@ -61,7 +61,7 @@ class Codechef {
         boolean correct = scanner.nextBoolean();
         int n = scanner.nextInt();
         
-        if(correct == true||n<=24)
+        if(correct == true && n<24)
         {
             System.out.println("Package qualifies for same-day delivery.");
         }else{
