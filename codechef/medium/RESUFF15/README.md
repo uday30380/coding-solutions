@@ -4,40 +4,113 @@
 
 ## Problem
 
-_Description not available._
+### Shipping Charges Calculation
+
+Write a program that takes package weight and delivery speed as input to determine the shipping charge. The program should use a  **nested if statement**  to check whether the package weight is within the allowed limit and apply charges based on the delivery speed.
+
+ **Input:** 
+
+- A double representing the package weight.
+- A string representing the delivery speed ("Standard" or "Express").
+
+ **Condition:** 
+
+- If the weight is 5 kg or less: If the delivery speed is "Express", print: "Shipping charge: $15" Otherwise (for "Standard" delivery), print: "Shipping charge: $10"
+- If the weight exceeds 5 kg, print: "Shipping not available for packages above 5 kg."
+
+Run the code, enter different weights and delivery speeds, and check the shipping charges!
+
+### Sample 1:
+Input
+Output
+
+```
+4.5
+Express
+```
+
+```
+Shipping charge: $15
+
+```
+
+### Sample 2:
+Input
+Output
+
+```
+3.2
+Standard
+```
+
+```
+Shipping charge: $10
+```
+
+### Sample 3:
+Input
+Output
+
+```
+6.0
+Express
+```
+
+```
+Shipping not available for packages above 5 kg.
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T14:04:46.326Z  
+**Submitted:** 2026-08-12T18:26:54.441Z  
 
 ```java
-import java.util.Scanner;
+import java.util.Scanner; // Import the Scanner class to take user input
 
 class Codechef {
     public static void main(String[] args) {
-        
-        Scanner sc=new Scanner(System.in);
-        
-        boolean bookingStatus = sc.nextBoolean();
-        String roomType = sc.next();
+        Scanner scanner = new Scanner(System.in); // Create a Scanner object for user input
 
-        // Outer if condition checks if the booking is valid
-        if (bookingStatus == true) {
-            // Nested if condition checks the type of room
-            if (roomType.equals("Luxury")) {
-                System.out.println("Welcome to your Luxury Suite!");
-            } else {
-                System.out.println("Welcome to your Standard Room!");
+        // Read the weight input from the user
+        double weight = scanner.nextDouble(); 
+        
+        // Consume the leftover newline character
+        scanner.nextLine(); 
+        // Read the delivery speed input from the user
+        String deliverySpeed = scanner.nextLine(); 
+
+        // Check if the weight of the package is within the allowed limit
+
+            // Check if the delivery speed is "Express"
+            
+            
+            
+            if(weight<5){
+                if(deliverySpeed.equals("Express")){
+                    System.out.println("Shipping charge: $15");
+                }else{
+                    System.out.println("Shipping charge: $10");
+                }
+                
+            }else{
+                System.out.println("Shipping not available for packages above 5 kg.");
             }
-        } else {
-            System.out.println("Booking not found. Please check your details.");
-        }
+            
+            
+            
+            
 
-        // Indicating that the reservation check is completed
-        System.out.println("Reservation check completed.");
+
+
+
+
+
+
+
+        scanner.close(); // Close the Scanner object to prevent resource leaks
     }
 }
 
