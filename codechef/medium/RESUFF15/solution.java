@@ -1,26 +1,45 @@
-import java.util.Scanner;
+import java.util.Scanner; // Import the Scanner class to take user input
 
 class Codechef {
     public static void main(String[] args) {
-        
-        Scanner sc=new Scanner(System.in);
-        
-        boolean bookingStatus = sc.nextBoolean();
-        String roomType = sc.next();
+        Scanner scanner = new Scanner(System.in); // Create a Scanner object for user input
 
-        // Outer if condition checks if the booking is valid
-        if (bookingStatus == true) {
-            // Nested if condition checks the type of room
-            if (roomType.equals("Luxury")) {
-                System.out.println("Welcome to your Luxury Suite!");
-            } else {
-                System.out.println("Welcome to your Standard Room!");
+        // Read the weight input from the user
+        double weight = scanner.nextDouble(); 
+        
+        // Consume the leftover newline character
+        scanner.nextLine(); 
+        // Read the delivery speed input from the user
+        String deliverySpeed = scanner.nextLine(); 
+
+        // Check if the weight of the package is within the allowed limit
+
+            // Check if the delivery speed is "Express"
+            
+            
+            
+            if(weight<5){
+                if(deliverySpeed.equals("Express")){
+                    System.out.println("Shipping charge: $15");
+                }else{
+                    System.out.println("Shipping charge: $10");
+                }
+                
+            }else{
+                System.out.println("Shipping not available for packages above 5 kg.");
             }
-        } else {
-            System.out.println("Booking not found. Please check your details.");
-        }
+            
+            
+            
+            
 
-        // Indicating that the reservation check is completed
-        System.out.println("Reservation check completed.");
+
+
+
+
+
+
+
+        scanner.close(); // Close the Scanner object to prevent resource leaks
     }
 }
