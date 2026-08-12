@@ -1,0 +1,67 @@
+# RESUFF16
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
+
+## Problem
+
+_Description not available._
+
+## Solution
+
+**Language:** Java  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-08-12T18:26:59.519Z  
+
+```java
+import java.util.Scanner; // Import the Scanner class to take user input
+
+class Codechef {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); // Create a Scanner object for user input
+
+        // Read the weight input from the user
+        double weight = scanner.nextDouble(); 
+        
+        // Consume the leftover newline character
+        scanner.nextLine(); 
+        // Read the delivery speed input from the user
+        String deliverySpeed = scanner.nextLine(); 
+
+        // Check if the weight of the package is within the allowed limit
+
+            // Check if the delivery speed is "Express"
+            
+            
+            
+            if(weight<5){
+                if(deliverySpeed.equals("Express")){
+                    System.out.println("Shipping charge: $15");
+                }else{
+                    System.out.println("Shipping charge: $10");
+                }
+                
+            }else{
+                System.out.println("Shipping not available for packages above 5 kg.");
+            }
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+        scanner.close(); // Close the Scanner object to prevent resource leaks
+    }
+}
+
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/RESUFF16)
