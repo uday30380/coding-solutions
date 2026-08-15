@@ -4,54 +4,79 @@
 
 ## Problem
 
-### Counting Down for a Rocket Launch
+### Sum of Digits Calculator
 
-A space agency is conducting a countdown for a rocket launch. The loop runs using a forward loop counter with a while loop and prints each number.
+A banking application ensures data integrity by verifying the sum of digits in an account number. This helps in detecting data entry errors when customers register their account details. The system extracts and sums all digits in the account number and verifies it against the expected digit sum.
+
+ **Steps to Complete:** 
+
+- Read an integer from the user.
+- Initialize a sum variable to store the total sum of digits.
+- Use a while loop to extract each digit using the modulus operator (%).
+- Add the extracted digit to the sum.
+- Print the final sum of the digits until number!=0.
+### Sample 1:
+Input
+Output
 
 ```
-class Codechef {
-    public static void main(String[] args) {
-        int count = 1; 
+456
+```
 
-        while (count <= 10) {  
-            System.out.println("T-minus " + count);  
-            count++; 
-        }
+```
+Sum of digits: 15
+```
 
-        System.out.println("Lift-off!");  
-    }
-}
+### Sample 2:
+Input
+Output
 
+```
+1023
+```
+
+```
+Sum of digits: 6
 ```
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-15T05:57:11.268Z  
+**Submitted:** 2026-08-15T06:04:14.952Z  
 
-```cpp
-import java.util.Scanner;  // Import Scanner for user input  
+```java
+import java.util.Scanner;  
 
-class Codechef {
+class Codechef {  
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Create Scanner object  
         
-        // Prompt the user to enter the number for which the table is generated  
-        // Read the user's input directly and use it in the while loop
-        int number = scanner.nextInt();  // Read user input using the scanner object
-
-        int multiplier = 1;  // Initialize counter  
-
-        // Loop will run until multiplier becomes equal to 10
-        while (multiplier <= 10) {  
-            System.out.println(number + " x " + multiplier + " = " + (number * multiplier));  
-            multiplier++;  // Increment counter  
-        }
+        // Create a Scanner object to read input from the user
+        Scanner scanner = new Scanner(System.in);  
         
-        scanner.close();  // Close the scanner  
-    }
+        // Read an integer input from the user
+        int number = scanner.nextInt();  
+        
+        // Variable to store the sum of digits of the number  
+        
+        int sum=0;
+
+
+        // Start a while loop, the loop will run until the number becomes 0
+        while(number>0){
+            
+            sum+= number % 10;
+            
+            number/= 10;
+            
+        
+
+        }  
+
+        // Print the result, which is the sum of the digits
+        System.out.println("Sum of digits: " + sum);
+    }  
 }
 ```
 
