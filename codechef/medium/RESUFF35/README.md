@@ -4,50 +4,95 @@
 
 ## Problem
 
-_Description not available._
+### Menu Selection in a Restaurant
+
+Write a Program to Select a Dish from the Menu. This program displays a restaurant menu and takes the user’s choice as input. Based on the selected option, it uses a `switch` statement to determine the corresponding dish and displays the result.
+
+ **Menu Options:** 
+
+- Pasta
+- Burger
+- Salad
+- Dessert
+
+The user is expected to input a number from `1` to `4`. If the input is invalid, the program will display an appropriate message.
+
+ **Input:** 
+A single integer representing the menu item number selected by the user.
+
+Run the code and enter different values from the menu to see how the switch statement works!
+
+### Sample 1:
+Input
+Output
+
+```
+2
+```
+
+```
+Welcome to the Restaurant! Please select a dish:
+1. Pasta
+2. Burger
+3. Salad
+4. Dessert
+You selected: Burger
+
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-15T05:30:25.456Z  
+**Submitted:** 2026-08-15T05:40:25.348Z  
 
 ```java
-import java.util.*;
+import java.util.Scanner; // Import Scanner class for user input
+
 class Codechef {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-       
-        int weatherCode = scanner.nextInt(); //User Input 
+        Scanner scanner = new Scanner(System.in); // Create Scanner object for input
 
-        switch (weatherCode) {
-            case 1:
-                System.out.println("It's sunny! Wear light clothes and don't forget sunscreen.");
-                break;
-               
+        // Display menu options
+        System.out.println("Welcome to the Restaurant! Please select a dish:");
+        System.out.println("1. Pasta");
+        System.out.println("2. Burger");
+        System.out.println("3. Salad");
+        System.out.println("4. Dessert");
 
-            case 2:
-                System.out.println("It's rainy! Bring an umbrella and wear waterproof clothes.");
-                break;
-                
-            case 3:
-                
-                System.out.println("It's snowy! Wear warm layers and snow boots.");
-                break;
-            case 4:
-                System.out.println("It's windy! Wear a windbreaker and avoid loose clothing.");
-                break;
-                
-                
-                
+        // Read user input for menu choice
+        int choice = scanner.nextInt();
 
-            default:
-            System.out.println("Invalid weather condition code. Please enter 1, 2, 3, or 4.");
-                
+        String dish; // Variable to store the selected dish
+
+        // Determine the dish based on the menu selection using switch statement
+        switch (choice) {
+            case 1: // If user selects "1"
+                dish = "Pasta";
+                break;
+
+            case 2: // If user selects "2"
+                dish = "Burger";
+                break;
+
+            case 3: // If user selects "3"
+                dish = "Salad";
+                break;
+
+            case 4: // If user selects "4"
+                dish = "Dessert";
+                break;
+
+            default: // If the user enters an invalid option
+                dish = "Invalid choice. Please select a valid menu option.";
+                break;
         }
 
-        scanner.close();
+        // Output the selected dish or error message
+        System.out.println("You selected: " + dish);
+
+        scanner.close(); // Close the Scanner object
     }
 }
 
