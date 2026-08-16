@@ -1,0 +1,39 @@
+# CTMNMF33
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
+
+## Problem
+
+### Incoming Requests
+
+In this example, we are going to demonstrate a simple simulation of a server that continuously processes incoming requests using an infinite loop in Java. The server indicates that it is operational by repeatedly displaying the message "Server is running".
+
+**You will get a Time limit exceeded error because we have not terminated the loop.
+To get AC (Accepted) in this problem, use break inside the while loop — it immediately stops the loop. We’ll discuss more about break later on.**
+
+## Solution
+
+**Language:** Java  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-08-16T06:32:04.086Z  
+
+```java
+class Codechef {
+    public static void main(String[] args) {
+     
+       // This infinite loop simulates a continuously running server.
+        while(true)
+        {
+             System.out.println("Server is running");
+             
+        }
+    
+    }
+}
+
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/CTMNMF33)
