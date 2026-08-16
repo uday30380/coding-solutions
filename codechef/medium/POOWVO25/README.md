@@ -4,57 +4,99 @@
 
 ## Problem
 
-### Inverted Right-Angled Triangle Pattern
+### Make your first triangle!
 
-What will be the output of the following Java code snippet.
+Write a program to create a  **left-aligned number triangle pattern**  using  **while loops**, where the user inputs the number of `rows` (denoted as `n`).
+
+ **Steps to Complete:** 
+
+- Take user input n and validate it to ensure it's a positive integer.
+- Use a nested while loop, where: The outer loop controls the number of rows from 1 to n. The inner loop prints numbers starting from 1 up to the current row number.
+- Print a new line after each row to move to the next.
+- Display the final pattern.
+### Sample 1:
+Input
+Output
 
 ```
-class Codechef {
-    public static void main(String[] args) {
-        int row = 4;
+6
+```
 
-        while (row >= 1) {
-            int col = 1;
-            while (col <= row) {
-                System.out.print("* ");
-                col++;
-            }
-            System.out.println();
-            row--;
-        }
-    }
-}
+```
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+1 2 3 4 5 6 
+```
 
+### Sample 2:
+Input
+Output
+
+```
+5
+```
+
+```
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+```
+
+### Sample 3:
+Input
+Output
+
+```
+-1
+```
+
+```
+Error: Please enter a positive integer.
 ```
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-16T11:15:06.386Z  
+**Submitted:** 2026-08-16T11:23:13.042Z  
 
-```cpp
+```java
+import java.util.Scanner;
+
 class Codechef {
     public static void main(String[] args) {
-        int row = 1; // Initialize row counter
-        int totalRows = 5; // Total rows in the triangle
+        Scanner scanner = new Scanner(System.in);
 
-        // Outer while loop: controls the number of rows
-        while (row <= totalRows) {
-            int column = 1; // Reset column counter for each row
+        // Step 1: Take user input and validate
+        int n = scanner.nextInt();
 
-            // Inner while loop: prints '*' for the current row
-            while (column <= row) {
-                System.out.print("* "); // Print '*' with a space
-                column++; // Increment column counter
+        if (n <= 0) {
+            System.out.println("Error: Please enter a positive integer.");
+            return;
+        }
+
+        // Step 2: Generate the pattern using while loops
+        int row = 1;
+        while (row <= n) {
+            int num = 1;
+            while (num <= row) {
+                System.out.print(num + " ");
+                num++;
             }
 
-            System.out.println(); // Move to the next line after printing a row
-            row++; // Increment row counter
+            // Step 3: Move to the next line
+            System.out.println();
+            row++;
         }
     }
 }
+
 ```
 
 ---
