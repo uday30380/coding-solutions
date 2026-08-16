@@ -36,27 +36,26 @@ Access granted!
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-16T10:47:30.590Z  
+**Submitted:** 2026-08-16T10:49:52.639Z  
 
 ```java
 import java.util.Scanner;
 
 class Codechef {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in); 
         
         
-        int correctPIN = 1234; // Define the correct PIN
-        boolean isVerified = false; // Flag to control the loop
+        int correctPIN = 1234; 
+        boolean isVerified = false; 
 
-        // Loop continues until the correct PIN is entered
+        
         while (!isVerified) {
-            //System.out.print("Enter your 4-digit PIN: ");
-            // Read user input
+            
 int userPIN = scanner.nextInt(); 
-            // Check if the entered PIN matches the correct PIN
+            
             if (userPIN == correctPIN) {
-                isVerified = true; // Set flag to true to exit loop
+                isVerified = true; 
                 System.out.println("Access granted!"); // Display success message
             } else {
                 System.out.println("Invalid PIN. Try again."); // Prompt user to re-enter
