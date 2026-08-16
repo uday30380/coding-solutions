@@ -36,7 +36,7 @@ Access granted!
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-16T10:49:52.639Z  
+**Submitted:** 2026-08-16T10:49:59.627Z  
 
 ```java
 import java.util.Scanner;
