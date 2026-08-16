@@ -16,7 +16,7 @@ To get AC (Accepted) in this problem, use break inside the while loop — it imm
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-16T06:32:04.086Z  
+**Submitted:** 2026-08-16T06:32:16.638Z  
 
 ```java
 class Codechef {
@@ -26,7 +26,7 @@ class Codechef {
         while(true)
         {
              System.out.println("Server is running");
-             
+             break;
         }
     
     }
