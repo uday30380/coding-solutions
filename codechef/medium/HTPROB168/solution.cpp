@@ -1,18 +1,17 @@
-    
-    </header>
-      <a href="#">Contact</a>
-      <a href="#">About</a> |
-      <a href="#home">Home</a> |
-    
-    <header>
-    <h1>My Blog</h1>
-   <!-- TODO: Add main site header and nav  -->
+<header>
 
-<body>
-</head>
-      <nav>
+    <h2>The Journey of Web Development</h2>
+  </header>
 
+  <!-- TODO: Add in-page nav -->
 
-  <!-- TODO: Add article header  -->
-    </nav>
-  <title>Blog Post Structure</title>
+  <nav>
+  
+    <a href="#section1">Introduction</a>
+    <a href="#section2">Modern Tools</a>
+
+  </nav>
+  
+  
+  <h3 id="section1">Introduction</h3>
+  <p>Web development has evolved rapidly over the years, starting from simple static pages to modern, dynamic applications.</p>
