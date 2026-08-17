@@ -6,7 +6,9 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner scanner = new Scanner(System.in);
+		
+		
 
 	}
 }
