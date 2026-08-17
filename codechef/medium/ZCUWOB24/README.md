@@ -4,16 +4,37 @@
 
 ## Problem
 
-_Description not available._
+### MCQ - Nested For Loop
+
+What will be the output of the following Java program?
+
+```
+class Codechef {
+    public static void main(String[] args) {
+        int rows = 4;
+
+        // Outer loop
+        for (int i = 1; i <= rows; ++i) {
+
+            // Inner loop to print numbers
+            for (int j = 1; j <= i; ++j) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+```
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T14:16:55.630Z  
+**Submitted:** 2026-08-17T14:17:19.906Z  
 
-```java
+```cpp
 class Codechef {
     public static void main(String[] args) {
         int size = 4; // Define table size (4x4)
