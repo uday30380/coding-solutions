@@ -16,7 +16,7 @@ class Codechef
 		
 		int sum=first*middle;
 		
-		if(sum>last){
+		if(sum>=last){
 		    System.out.println("YES");
 		}else{
 		    System.out.println("NO");
