@@ -57,7 +57,7 @@ There are $3 \times 4 = 12$ chairs in total, which is not enough for $15$ people
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T15:21:03.146Z  
+**Submitted:** 2026-08-17T15:21:46.113Z  
 
 ```java
 import java.util.*;
@@ -78,7 +78,7 @@ class Codechef
 		
 		int sum=first*middle;
 		
-		if(sum>last){
+		if(sum>=last){
 		    System.out.println("YES");
 		}else{
 		    System.out.println("NO");
