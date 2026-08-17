@@ -25,7 +25,7 @@ In this example, we demonstrate how to use a  **for loop with a negative step** 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T14:12:05.105Z  
+**Submitted:** 2026-08-17T14:13:23.383Z  
 
 ```java
 class Codechef {
