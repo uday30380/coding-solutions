@@ -9,7 +9,11 @@ class Codechef
 		Scanner scanner = new Scanner(System.in);
 		
 		n=scanner.nextInt();
-		String 
+		String = scanner.nextLine();
+		
+		for(i=0;i<n;i++){
+		    
+		}
 
 	}
 }
