@@ -52,7 +52,7 @@ EVEN  3   EVEN  5   EVEN
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T13:38:14.677Z  
+**Submitted:** 2026-08-18T13:38:19.895Z  
 
 ```java
 import java.util.Scanner;
