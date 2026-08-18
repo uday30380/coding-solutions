@@ -4,14 +4,14 @@
 
 ## Problem
 
-### Worked Example - For Loop with Break
+### Finding the First Number Greater Than 50
 
-In this example, we demonstrate how to use a for loop with a break statement to find the first multiple of 7 within a given range. Once it finds the first multiple of 7, it will print the number and exit the loop immediately using `break`.
+Numbers play a crucial role in various calculations. Your task is to complete the Java program that identifies the  **first number greater than 50**  using a  **for loop**  and exits the loop once the condition is met using `break`.
 
- **When executed, the code will show:** 
+ **Expected Output:** 
 
 ```
-First multiple of 7 found: 14 
+First number greater than 50 found: 53  
 
 ```
 
@@ -20,24 +20,25 @@ First multiple of 7 found: 14
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T13:42:04.074Z  
+**Submitted:** 2026-08-18T13:43:29.745Z  
 
 ```java
 class Codechef {
     public static void main(String[] args) {
-        int range = 20; // Define the range limit
+        int range = 100; // Define the range limit
 
-        // Loop through numbers from 10 to 20
-        for (int i = 10; i <= range; i++) {
+        // Loop through numbers from 1 to 100
+        for (int i = 1; i <= range; i+=4) { // Fill in the blanks  
             
-            // Check if the number is a multiple of 7
-            if (i % 7 == 0) {
-                System.out.println("First multiple of 7 found: " + i); // Print the first multiple
-                break; // Exit the loop immediately
+            // Check if the number is greater than 50
+            if (i > 50) { // Fill in the blank  
+                System.out.println("First number greater than 50 found: " + i); // Fill in the blank  
+                break; // Fill in the blank to exit the loop
             }
         }
     }
 }
+
 ```
 
 ---
