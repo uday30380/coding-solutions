@@ -6,10 +6,10 @@ public class Main {
 
         int N = sc.nextInt();
 
-        int count = 0;
-        int minSpeed = Integer.MAX_VALUE;
+        int minSpeed = sc.nextInt();
+        int count = 1;
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 1; i < N; i++) {
             int speed = sc.nextInt();
 
             if (speed < minSpeed) {
