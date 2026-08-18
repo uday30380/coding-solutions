@@ -67,7 +67,7 @@ Therefore, the total number of groups is  **4**.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T15:45:26.879Z  
+**Submitted:** 2026-08-17T15:43:11.820Z  
 
 ```java
 import java.util.*;
@@ -82,11 +82,8 @@ class Codechef
 		
 		n=scanner.nextInt();
 		String = scanner.nextLine();
-		int count=0;
 		
 		for(i=0;i<n;i++){
-		    
-		    
 		    
 		}
 
