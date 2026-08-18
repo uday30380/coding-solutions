@@ -8,7 +8,8 @@ class Codechef
 	{
 		Scanner scanner = new Scanner(System.in);
 		
-		
+		n=scanner.nextInt();
+		String 
 
 	}
 }
