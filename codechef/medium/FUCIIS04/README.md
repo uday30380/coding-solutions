@@ -4,34 +4,30 @@
 
 ## Problem
 
-### Reverse a String
+### Iterating through each character
 
-In this example, we demonstrate how to use a `for` loop to iterate through a string in reverse order. This method helps in understanding how to manipulate strings using loops in Java.
-
-The loop iterates through each character of the string starting from the last index and moves towards the first. The `charAt()` method is used to access individual characters, and `System.out.print()` displays them sequentially in reverse order.
-
-### Sample 1:
-Input
-Output
+Which of the following correctly iterates through the string `"Hello"` in reverse order?
 
 ```
-Java Programming
-```
-
-```
-Characters in reverse order: 
-gnimmargorP avaJ
+class Codechef {
+    public static void main(String[] args) {
+        String text = "Hello";
+        for (/ *condition* /) {
+            System.out.print(text.charAt(i));
+        }
+    }
+}
 
 ```
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T14:06:14.705Z  
+**Submitted:** 2026-08-18T14:07:06.230Z  
 
-```java
+```cpp
 import java.util.Scanner; // Import Scanner class for user input
 
 class Codechef { 
