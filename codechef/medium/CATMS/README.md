@@ -70,26 +70,34 @@ Therefore, all  **6 cars**  can move at their maximum speed.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T15:29:04.464Z  
+**Submitted:** 2026-08-17T15:37:16.465Z  
 
 ```java
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		Scanner scanner= new Scanner(System.in);
-		
-		int n=scanner.nextInt();
-		
-		
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-	}
+        int N = sc.nextInt();
+
+        int count = 0;
+        int minSpeed = Integer.MAX_VALUE;
+
+        for (int i = 0; i < N; i++) {
+            int speed = sc.nextInt();
+
+            if (speed < minSpeed) {
+                count++;
+                minSpeed = speed;
+            }
+        }
+
+        System.out.println(count);
+
+        sc.close();
+    }
 }
-
 ```
 
 ---
