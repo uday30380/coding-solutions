@@ -10,8 +10,11 @@ class Codechef
 		
 		n=scanner.nextInt();
 		String = scanner.nextLine();
+		int count=0;
 		
 		for(i=0;i<n;i++){
+		    
+		    
 		    
 		}
 
