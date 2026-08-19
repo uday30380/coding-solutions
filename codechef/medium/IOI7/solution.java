@@ -8,11 +8,11 @@ class Codechef
 	{
 		Scanner scanner = new Scanner(System.in);
 		
-		int n=scanner.nextInt();
-		int x=scanner.nextInt();
+		int N=scanner.nextInt();
+		int G=scanner.nextInt();
 		
 		
-		if(n>=x){
+		if(N>=G){
 		    System.out.println("Yes");
 		}else{
 		    System.out.println("No");
