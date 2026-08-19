@@ -12,7 +12,7 @@ class Codechef
 		int x=scanner.nextInt();
 		
 		
-		if(n>x){
+		if(n>=x){
 		    System.out.println("Yes");
 		}else{
 		    System.out.println("No");
