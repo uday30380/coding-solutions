@@ -4,22 +4,20 @@
 
 ## Problem
 
-### Summation of Natural Numbers
+### Summation of a Mathematical Series
 
-In this example, we demonstrate how  **for loops**  can be used to calculate the sum of the first `n` natural numbers. The program takes an integer input from the user and computes the summation efficiently using a loop.
-
-When executed, the code will display the total sum, showcasing how loops and arithmetic operations work together in Java.
+A program that calculates the  **sum of the squares of the first `'n'` natural numbers**. Complete the program by filling in the missing parts to ensure it correctly calculates and displays the sum.
 
 ### Sample 1:
 Input
 Output
 
 ```
-5
+4
 ```
 
 ```
-The sum of the first 5 natural numbers is: 15  
+The sum of the squares of the first 4 natural numbers is: 30  
 ```
 
 ## Solution
@@ -27,30 +25,30 @@ The sum of the first 5 natural numbers is: 15
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T18:08:16.626Z  
+**Submitted:** 2026-08-19T18:09:28.434Z  
 
 ```java
-import java.util.Scanner; // Import the Scanner class for user input
+import java.util.*;
 
 class Codechef {
     public static void main(String[] args) {
-        // Create a Scanner object to read user input
-        Scanner scanner = new Scanner(System.in); 
+        Scanner scanner = new Scanner(System.in); // Creating a Scanner object to take user input
         
-        // Prompt the user to enter the value of 'n'
-        int n = scanner.nextInt(); 
-        
+        // Prompting the user to enter the number of terms
+        int n = scanner.nextInt();
+
         int sum = 0; // Initialize the sum to 0
 
-        // Use a for loop to calculate the summation
-        for (int i = 1; i <= n; i++) {
-            sum += i; // Add each number to the sum
+        // Using a for loop to calculate the sum of squares
+        for (int i=1; i<=n;i++) {  // Fill in the blanks
+            sum += i*i; // Fill in the blank
         }
 
-        // Print the result
-        System.out.println("The sum of the first " + n + " natural numbers is: " + sum);
-        
-        scanner.close(); // Close the Scanner object to release resources
+        // Printing the sum of squares
+        System.out.println("The sum of the squares of the first " + n + " natural numbers is: " + sum);
+
+        // Closing the Scanner object
+        scanner.close();
     }
 }
 
