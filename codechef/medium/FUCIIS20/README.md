@@ -4,37 +4,53 @@
 
 ## Problem
 
-_Description not available._
+### Sum of Even Numbers in a Series
+
+Write a program that takes an integer input representing the upper limit (`n`) and calculates the sum of all even numbers from `1` to `n`. If a number is evenly divisible by `2`, it is considered even and added to the sum.
+
+ **Input:** 
+A single integer representing the upper limit of the series.
+
+Run the code, enter different values, and check how the sum of even numbers changes!
+
+### Sample 1:
+Input
+Output
+
+```
+10
+```
+
+```
+The sum of even numbers is: 30  
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T18:09:29.614Z  
+**Submitted:** 2026-08-19T18:11:46.042Z  
 
 ```java
-import java.util.*;
+import java.util.Scanner; // Import the Scanner class for user input
 
 class Codechef {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Creating a Scanner object to take user input
-        
-        // Prompting the user to enter the number of terms
-        int n = scanner.nextInt();
+        // Create a Scanner object for taking input
+        Scanner scanner = new Scanner(System.in); 
+        int n = scanner.nextInt(); 
+        int sum = 0; // Initialize the variable to store the sum of even numbers
 
-        int sum = 0; // Initialize the sum to 0
-
-        // Using a for loop to calculate the sum of squares
-        for (int i=1; i<=n;i++) {  // Fill in the blanks
-            sum += i*i; // Fill in the blank
+        // Loop from 1 to n
+        for(int i=1;i<=n;i++){
+            if(i%2==0){
+                sum+=i;
+            }
         }
 
-        // Printing the sum of squares
-        System.out.println("The sum of the squares of the first " + n + " natural numbers is: " + sum);
-
-        // Closing the Scanner object
-        scanner.close();
+        // Print the final sum of all even numbers in the range
+        System.out.println("The sum of even numbers is: " + sum);
     }
 }
 
