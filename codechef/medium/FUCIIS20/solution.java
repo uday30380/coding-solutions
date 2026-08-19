@@ -1,23 +1,20 @@
-import java.util.*;
+import java.util.Scanner; // Import the Scanner class for user input
 
 class Codechef {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Creating a Scanner object to take user input
-        
-        // Prompting the user to enter the number of terms
-        int n = scanner.nextInt();
+        // Create a Scanner object for taking input
+        Scanner scanner = new Scanner(System.in); 
+        int n = scanner.nextInt(); 
+        int sum = 0; // Initialize the variable to store the sum of even numbers
 
-        int sum = 0; // Initialize the sum to 0
-
-        // Using a for loop to calculate the sum of squares
-        for (int i=1; i<=n;i++) {  // Fill in the blanks
-            sum += i*i; // Fill in the blank
+        // Loop from 1 to n
+        for(int i=1;i<=n;i++){
+            if(i%2==0){
+                sum+=i;
+            }
         }
 
-        // Printing the sum of squares
-        System.out.println("The sum of the squares of the first " + n + " natural numbers is: " + sum);
-
-        // Closing the Scanner object
-        scanner.close();
+        // Print the final sum of all even numbers in the range
+        System.out.println("The sum of even numbers is: " + sum);
     }
 }
