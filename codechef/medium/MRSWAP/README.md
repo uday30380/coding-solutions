@@ -56,7 +56,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T14:53:40.970Z  
+**Submitted:** 2026-08-19T14:56:17.954Z  
 
 ```java
 import java.util.*;
@@ -67,7 +67,13 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner scanner = new Scanner(System.in);
+		
+		int t=scanner.nextInt();
+		
+		while(t--){
+		    
+		}
 
 	}
 }
