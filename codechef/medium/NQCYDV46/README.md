@@ -57,7 +57,7 @@ The score is: 70
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-21T17:12:50.138Z  
+**Submitted:** 2026-08-21T17:13:11.678Z  
 
 ```java
 import java.util.Scanner;
@@ -70,13 +70,13 @@ class CodeChef {
 
         // Check conditions and print grades
         // Potential Logical Error: Ensure the correct comparison operators are used
-        if (score > 90 && score <= 100) {
+        if (score >= 90 && score <= 100) {
             System.out.println("Grade: A");
         }
-        else if (score > 80 && score < 90) {
+        else if (score >= 80 && score < 90) {
             System.out.println("Grade: B");
         }
-        else if (score > 70 && score < 80) {
+        else if (score >= 70 && score < 80) {
             System.out.println("Grade: C");
         }
         else {
