@@ -13,7 +13,7 @@ class Codechef
 		try{
 		    int result=n;
 		    System.out.println(result);
-		}catch(ArithmeticException e){
+		}catch(NumberFormatException e){
 		    System.out.println("Invalid Integer");
 		}
 
