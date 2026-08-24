@@ -49,29 +49,24 @@ Invalid Integer
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:36:41.011Z  
+**Submitted:** 2026-08-24T16:38:20.056Z  
 
 ```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		Scanner scanner = new Scanner(System.in);
-		
-		int n = scanner.nextInt();
-		
-		try{
-		    int result=n;
-		    System.out.println(result);
-		}catch(ArithmeticException e){
-		    System.out.println("Invalid Integer");
-		}
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        try {
+            int num = Integer.parseInt(scanner.nextLine());  // Attempt to convert input to an integer
+            System.out.println(num);
+        } catch (NumberFormatException e) {  // Handle cases where input is not a valid integer
+            System.out.println("Invalid Integer");
+        }
 
-	}
+        scanner.close();
+    }
 }
 
 ```
