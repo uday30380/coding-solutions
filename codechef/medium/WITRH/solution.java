@@ -12,7 +12,13 @@ class Codechef
 	int y=sc.nextInt();
 	int k=sc.nextInt();
 	
+	int distance = x-y;
 	
+	if(|distance|>=k){
+	    System.out.println("YES");
+	}else{
+	    System.out.println("NO");
+	}
 	
 	
 	}
