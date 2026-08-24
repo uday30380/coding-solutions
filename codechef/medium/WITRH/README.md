@@ -61,7 +61,7 @@ Since the robot can travel only $5$ units, it cannot reach the charging station.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T14:41:14.982Z  
+**Submitted:** 2026-08-24T14:40:32.287Z  
 
 ```java
 import java.util.*;
@@ -78,9 +78,9 @@ class Codechef
 	int y=sc.nextInt();
 	int k=sc.nextInt();
 	
-	int distance = Math.abs(x-y);
+	int distance = x-y;
 	
-	if(distance<=k){
+	if(|distance|>=k){
 	    System.out.println("YES");
 	}else{
 	    System.out.println("NO");
