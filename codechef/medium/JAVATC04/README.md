@@ -49,7 +49,7 @@ Invalid Integer
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:33:06.597Z  
+**Submitted:** 2026-08-24T16:36:41.011Z  
 
 ```java
 import java.util.*;
