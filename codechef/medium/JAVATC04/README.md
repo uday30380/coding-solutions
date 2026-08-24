@@ -49,7 +49,7 @@ Invalid Integer
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:39:11.640Z  
+**Submitted:** 2026-08-24T16:39:32.061Z  
 
 ```java
 import java.util.Scanner;
