@@ -22,16 +22,16 @@ Third color: Blue
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T11:15:46.029Z  
+**Submitted:** 2026-08-25T11:16:41.537Z  
 
 ```java
 class Codechef {
     public static void main(String[] args) {
         // Define a string with comma-separated values
-        String data = "Red,Green,Blue";
+        String[] colors = {"Red","Green","Blue"};
 
         // Use the split() method to divide the string into an array, using "," as the delimiter
-        String[] colors = data.split(","); // Splits string into array
+       
 
         // Access and print each element of the array manually without using loops
         System.out.println("First color: " + colors[0]); // Prints the first color
