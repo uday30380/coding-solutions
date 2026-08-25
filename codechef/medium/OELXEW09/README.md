@@ -26,12 +26,12 @@ Gym Membership: 150.0
 
 ## Solution
 
-**Language:** Java  
+**Language:** 10  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T09:50:21.140Z  
+**Submitted:** 2026-08-25T09:50:28.152Z  
 
-```java
+```10
 class Codechef {
     public static void main(String[] args) {
         // Static Initialization: Expenses in specific categories
