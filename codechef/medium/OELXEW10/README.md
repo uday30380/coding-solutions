@@ -22,7 +22,7 @@ Third color: Blue
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T09:53:15.553Z  
+**Submitted:** 2026-08-25T11:15:46.029Z  
 
 ```java
 class Codechef {
