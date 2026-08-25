@@ -22,7 +22,7 @@ Active Status: false, false, false
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T11:32:30.710Z  
+**Submitted:** 2026-08-25T11:32:37.017Z  
 
 ```java
 class Codechef {
