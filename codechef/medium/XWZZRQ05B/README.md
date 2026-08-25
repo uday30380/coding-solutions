@@ -37,7 +37,7 @@ Updated Array:
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T11:50:35.763Z  
+**Submitted:** 2026-08-25T11:50:43.712Z  
 
 ```java
 import java.util.Scanner;
