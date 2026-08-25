@@ -4,33 +4,41 @@
 
 ## Problem
 
-_Description not available._
+### Split String into Array and Access Elements
+
+Write a program to display  **individual colors**  from a comma-separated string using a static array and manual access. This program initializes a string with predefined color values separated by commas. It then uses the `split()` method to convert the  **string**  into an  **array**.
+
+ **Expected Output:** 
+
+```
+First color: Red
+Second color: Green
+Third color: Blue
+
+```
 
 ## Solution
 
-**Language:** 10  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T09:50:42.065Z  
+**Submitted:** 2026-08-25T09:53:15.553Z  
 
-```10
+```java
 class Codechef {
     public static void main(String[] args) {
-        // Static Initialization: Expenses in specific categories
-         // Rent, groceries, utilities, travel, others
-          double[] expenses= {2000.5, 1500.75, 800.25, 1200.00, 500.00};
+        // Define a string with comma-separated values
+        String data = "Red,Green,Blue";
 
-        System.out.println("Rent Expense: " + expenses[0]);
-        System.out.println("Grocery Expense: " + expenses[1]);
+        // Use the split() method to divide the string into an array, using "," as the delimiter
+        String[] colors = data.split(","); // Splits string into array
 
-        // Dynamic Initialization: Add expenses later
-        double[] newExpenses = {100.00, 150.00, 75.50};
-
-        System.out.println("Internet Bill: " + newExpenses[0]);
-        System.out.println("Gym Membership: " + newExpenses[1]);
+        // Access and print each element of the array manually without using loops
+        System.out.println("First color: " + colors[0]); // Prints the first color
+        System.out.println("Second color: " + colors[1]); // Prints the second color
+        System.out.println("Third color: " + colors[2]); // Prints the third color
     }
 }
-
 ```
 
 ---
