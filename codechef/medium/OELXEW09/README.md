@@ -29,7 +29,7 @@ Gym Membership: 150.0
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T09:49:38.553Z  
+**Submitted:** 2026-08-25T09:50:21.140Z  
 
 ```java
 class Codechef {
