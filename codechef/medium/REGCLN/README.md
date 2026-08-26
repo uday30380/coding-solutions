@@ -80,7 +80,7 @@ Today is day $49$. The next deep cleaning will be on day $50$, so the answer is 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T14:38:49.266Z  
+**Submitted:** 2026-08-26T14:40:31.601Z  
 
 ```java
 import java.util.*;
@@ -91,7 +91,11 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+	    
+	    Scanner scanner = new Scanner(System.in);
+	    int n=scanner.nextInt();
+	    
+	    if()
 
 	}
 }
