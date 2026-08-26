@@ -80,7 +80,7 @@ Today is day $49$. The next deep cleaning will be on day $50$, so the answer is 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T14:40:52.609Z  
+**Submitted:** 2026-08-26T17:04:29.923Z  
 
 ```java
 import java.util.*;
@@ -95,7 +95,16 @@ class Codechef
 	    Scanner scanner = new Scanner(System.in);
 	    int n=scanner.nextInt();
 	    
-	    if()
+	    if(n>=20&&n<=29){
+	        System.out.println(30-n);
+	    }
+	    else if(n>=30&&n<=39){
+	        System.out.println(40-n);
+	    }
+	    else
+	    {
+	        System.out.println(50-n);
+	    }
 
 	}
 }
