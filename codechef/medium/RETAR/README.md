@@ -92,7 +92,7 @@ Since $2800 < 3000$, the output is `NO`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:25:50.477Z  
+**Submitted:** 2026-08-31T14:30:34.650Z  
 
 ```java
 import java.util.*;
@@ -103,7 +103,26 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner scanner = new Scanner(System.in);
+		
+		int x = scanner.nextInt();
+		int y = scanner.nextInt();
+		
+		int z = scanner.nextInt();
+		int u = scanner.nextInt();
+		
+		int final1 = scanner.nextInt();
+		
+		int total=x*y;
+		int total1=z*u;
+		
+		int result=total1+total1
+		
+		if(result>=final1){
+		    System.out.println("YES";)
+		}else{
+		    System.out.println("NO");
+		}
 
 	}
 }
