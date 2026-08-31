@@ -92,7 +92,7 @@ Since $2800 < 3000$, the output is `NO`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:30:52.133Z  
+**Submitted:** 2026-08-31T14:32:29.786Z  
 
 ```java
 import java.util.*;
@@ -118,7 +118,7 @@ class Codechef
 		
 		int result=total1+total1;
 		
-		if(result>=final1){
+		if(result<=final1){
 		    System.out.println("YES");
 		}else{
 		    System.out.println("NO");
