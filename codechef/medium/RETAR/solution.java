@@ -19,7 +19,7 @@ class Codechef
 		int total=x*y;
 		int total1=z*u;
 		
-		int result=total1+total1;
+		int result=total1+total;
 		
 		if(result>=final1){
 		    System.out.println("YES");
