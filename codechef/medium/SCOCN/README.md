@@ -118,20 +118,41 @@ Therefore, the output is `1`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:34:54.430Z  
+**Submitted:** 2026-08-31T14:42:18.435Z  
 
 ```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+class Codechef {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-	}
+        // 1. Get the desired size of the array
+       
+        int size = scanner.nextInt();
+        
+        int fianl = scanner.nextInt();
+
+        // 2. Initialize the array with that size
+        int[] userArray = new int[size];
+
+        
+        for (int i = 0; i < size; i++) {
+            userArray[i] = scanner.nextInt();
+        }
+        
+        for(int i=0;i<size;i++){
+        userArray[i]=fianl;
+        i++;
+        System.out.println(i);
+        
+        
+            
+            
+        }
+        
+        
+    }
 }
 
 ```
