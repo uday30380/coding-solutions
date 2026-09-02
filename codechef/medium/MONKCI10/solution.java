@@ -12,18 +12,13 @@ class Codechef {
         // Step 2: Input words into the ArrayList
         
         ArrayList <String> shopping = new ArrayList<>();
-        
-        shopping.add("Rain");
-        shopping.add("Tree");
-        shopping.add("Cloud");
-        shopping.add("Moon");
-        
-        
-
-
-
 
         // Step 3: Remove words with length < 4
+        
+        if(shopping.length()<4){
+            
+        }
+        
 
 
 
