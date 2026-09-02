@@ -4,35 +4,65 @@
 
 ## Problem
 
-_Description not available._
+### Arrange Favorite Subjects
+
+You are given an empty `ArrayList` of subjects. Your task is to insert subjects in a specific order using the `add(index, element)` method.
+
+- Add "Math" at the end of the list.
+- Add "English" at the end of the list.
+- Add "Science" at index 1.
+- Add "History" at index 2.
+- Add "Art" at index 0.
+
+After all insertions, print the final list using `System.out.println()`.
+
+ **Expected Output:** 
+
+```
+[Art, Math, Science, History, English]
+
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T01:59:11.039Z  
+**Submitted:** 2026-09-02T02:02:31.785Z  
 
 ```java
 import java.util.ArrayList;
 
 class Codechef {
     public static void main(String[] args) {
-        // Step 1: Create an ArrayList to store city names
-        ArrayList<String> cities = new ArrayList<>();
+        ArrayList<String> subjects = new ArrayList<>();
 
-        // Step 2: Add elements at the end of the list
-        cities.add("Delhi");          // ["Delhi"]
-        cities.add("Mumbai");         // ["Delhi", "Mumbai"]
+        // Add "Math" at the end
+        
+        subjects.add("Art");
 
-        // Step 3: Add element at a specific index
-        cities.add(1, "Bangalore");   // Inserts at index 1: ["Delhi", "Bangalore", "Mumbai"]
 
-        // Step 4: Add another element at the beginning
-        cities.add(0, "Kolkata");     // Inserts at index 0: ["Kolkata", "Delhi", "Bangalore", "Mumbai"]
+        // Add "English" at the end
+        
+        subjects.add("Math");
 
-        // Step 5: Print the final list
-        System.out.println("Final list of cities: " + cities);
+
+        // Add "Science" at index 1
+        
+        subjects.add("Science");
+
+
+        // Add "History" at index 2
+        subjects.add("History");
+
+
+        // Add "Art" at index 0
+        
+        subjects.add("English");
+
+
+        // Print the final list
+        System.out.println(subjects);
     }
 }
 
