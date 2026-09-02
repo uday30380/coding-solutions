@@ -58,7 +58,7 @@ Lion
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T02:15:03.730Z  
+**Submitted:** 2026-09-02T02:17:41.965Z  
 
 ```java
 import java.util.ArrayList;
@@ -75,18 +75,13 @@ class Codechef {
         // Step 2: Input words into the ArrayList
         
         ArrayList <String> shopping = new ArrayList<>();
-        
-        shopping.add("Rain");
-        shopping.add("Tree");
-        shopping.add("Cloud");
-        shopping.add("Moon");
-        
-        
-
-
-
 
         // Step 3: Remove words with length < 4
+        
+        if(shopping.length()<4){
+            
+        }
+        
 
 
 
