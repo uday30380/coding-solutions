@@ -4,40 +4,52 @@
 
 ## Problem
 
-### Managing a To-Do List
+### Shopping list management
 
-In this example, we are going to demonstrate the usage of the remove method by both index and value, which allows removing elements either by their position or by their content in the list.
+You are given a partially written Java program that manages a shopping list using an ArrayList.
+Your task is to complete the code by following the instructions in the comments.
+
+ **Expected Output:** 
+
+```
+Final shopping list: [Milk, Eggs, Apples, Chicken, Rice]
+
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T02:06:52.951Z  
+**Submitted:** 2026-09-02T02:08:08.797Z  
 
 ```java
 import java.util.ArrayList;
 
-public class Main {
+class Codechef {
     public static void main(String[] args) {
-        ArrayList<String> todoList = new ArrayList<>();
+        ArrayList<String> shoppingList = new ArrayList<>();
         
-        // Adding initial tasks
-        todoList.add("Buy groceries");
-        todoList.add("Do laundry");
-        todoList.add("Pay bills");
-        todoList.add("Call mom");
-        todoList.add("Walk dog");
+        // Add items to the shopping list
+        shoppingList.add("Milk");
+        shoppingList.add("Eggs");
+        shoppingList.add("Bread");
+        shoppingList.add("Cheese");
+        shoppingList.add("Apples");
+        shoppingList.add("Chicken");
+        shoppingList.add("Rice");
         
-        System.out.println("Original list: " + todoList);
+        // Your code here
+        // 1. Remove item at index 3 ("Cheese")
         
-        // Remove task at index 2 ("Pay bills")
-        todoList.remove(2);
-        System.out.println("After removing index 2: " + todoList);
+        shoppingList.remove(3);
         
-        // Remove "Call mom" by object
-        todoList.remove("Call mom");
-        System.out.println("Final to-do list: " + todoList);
+        // 2. Remove item "Bread" by object
+        shoppingList.remove("Bread");
+        
+        
+        // Print the final shopping list
+        System.out.println("Final shopping list: " + shoppingList);
     }
 }
 
