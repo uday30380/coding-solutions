@@ -13,12 +13,10 @@ class Codechef
 		
 		int total=alice-bob;
 		
-		int final2 =2+bob;
+		int final2 = total+bob;
 		
 		if(total==final2){
-		    System.out.println(bob);
-		}else{
-		    System.out.println("-1");
+		    System.out.println
 		}
 
 	}
