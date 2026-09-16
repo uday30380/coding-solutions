@@ -1,18 +1,25 @@
-import java.util.Scanner;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-public class Main {
-    public static void main(String[] args) {
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		int alice = sc.nextInt();
+		int bob = sc.nextInt();
+		
+		int total=alice-bob;
+		
+		int final2 =2+bob;
+		
+		if(total==final2){
+		    System.out.println(bob);
+		}else{
+		    System.out.println("-1");
+		}
 
-        Scanner sc = new Scanner(System.in);
-
-        int A = sc.nextInt();
-        int B = sc.nextInt();
-
-        if ((A + B) % 2 == 0) {
-            int give = (A - B) / 2;
-            System.out.println(give);
-        } else {
-            System.out.println(-1);
-        }
-    }
+	}
 }
