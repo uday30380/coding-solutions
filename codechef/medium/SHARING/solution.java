@@ -6,7 +6,20 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
+		Scanner sc = new Scanner(System.in);
 		
+		int alice = sc.nextInt();
+		int bob = sc.nextInt();
+		
+		int total=alice-bob;
+		
+		int final2 =2+bob;
+		
+		if(total==final2){
+		    System.out.println(bob);
+		}else{
+		    System.out.println("-1");
+		}
 
 	}
 }
