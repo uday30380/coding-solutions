@@ -7,10 +7,8 @@ public class Main {
 
         int A = sc.nextInt();
         int B = sc.nextInt();
-        
-        int total=A + B;
 
-        if (total% 2 == 0) {
+        if ((A + B) % 2 == 0) {
             int give = (A - B) / 2;
             System.out.println(give);
         } else {
