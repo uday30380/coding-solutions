@@ -10,7 +10,7 @@ public class Main {
         
         int total=A + B;
 
-        if ((total% 2 == 0) {
+        if (total% 2 == 0) {
             int give = (A - B) / 2;
             System.out.println(give);
         } else {
