@@ -66,7 +66,7 @@ Chef can work on minutes $1, 2, 4, 5, 7$ to put up the net; so the answer is $7$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T14:49:16.678Z  
+**Submitted:** 2026-09-23T14:49:29.352Z  
 
 ```java
 import java.util.*;
@@ -86,7 +86,7 @@ class Codechef
 		    int kincndijci = sc.nextInt();
 		    
 		    int desan=(nnvnfnv-1)/(kincndijci-1);
-		    itn angjvnjfnv = nnvnfnv+desan;
+		    int angjvnjfnv = nnvnfnv+desan;
 		    
 		    System.out.println(angjvnjfnv);
 		}
