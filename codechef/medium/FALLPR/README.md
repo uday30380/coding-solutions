@@ -74,12 +74,12 @@ Thus, it's impossible to make the array  *good*  after a single deletion.
 
 ## Solution
 
-**Language:** C++  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:05:37.645Z  
+**Submitted:** 2026-09-23T15:06:26.192Z  
 
-```cpp
+```py
 tjgtvnr = int(input())
  
 for _ in range(tjgtvnr):
