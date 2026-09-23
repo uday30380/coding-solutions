@@ -66,7 +66,7 @@ Chef can work on minutes $1, 2, 4, 5, 7$ to put up the net; so the answer is $7$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T14:49:47.045Z  
+**Submitted:** 2026-09-23T14:50:08.309Z  
 
 ```java
 import java.util.*;
