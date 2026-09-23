@@ -15,7 +15,7 @@ class Codechef
 		    int kincndijci = sc.nextInt();
 		    
 		    int desan=(nnvnfnv-1)/(kincndijci-1);
-		    itn angjvnjfnv = nnvnfnv+desan;
+		    int angjvnjfnv = nnvnfnv+desan;
 		    
 		    System.out.println(angjvnjfnv);
 		}
